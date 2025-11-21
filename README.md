@@ -2,6 +2,72 @@
 
 A simple compiler for the `.my-java` language that compiles to JVM bytecode.
 
+## Roadmap: Building a Complete Programming Language
+
+### Phase 1: Foundation ✅
+- [x] Variable declarations (int, string)
+- [x] Print statements
+- [x] ANTLR grammar
+- [x] Bytecode generation
+- [x] Compile to `.class` files
+
+### Phase 2: Basic Operations
+- [ ] Arithmetic operators (+, -, *, /, %)
+- [ ] Comparison operators (==, !=, <, >, <=, >=)
+- [ ] Logical operators (&&, ||, !)
+- [ ] Boolean type
+- [ ] Type checking
+
+### Phase 3: Control Flow
+- [ ] If-else statements
+- [ ] While loops
+- [ ] For loops
+- [ ] Break and continue
+
+### Phase 4: Functions
+- [ ] Function declarations
+- [ ] Function calls with parameters
+- [ ] Return statements
+- [ ] Local variable scope
+
+### Phase 5: Arrays
+- [ ] Array declaration
+- [ ] Array initialization
+- [ ] Array access and assignment
+- [ ] Array length property
+
+### Phase 6: Classes & Objects
+- [ ] Class declarations
+- [ ] Constructors
+- [ ] Instance variables
+- [ ] Instance methods
+- [ ] Object instantiation (new)
+- [ ] this keyword
+
+### Phase 7: OOP Features
+- [ ] Inheritance (extends)
+- [ ] Method overriding
+- [ ] Access modifiers (public, private)
+- [ ] Static members
+
+### Phase 8: Error Handling
+- [ ] Try-catch-finally
+- [ ] Throw exceptions
+- [ ] Built-in exception types
+
+### Phase 9: Standard Library
+- [ ] Console input (readLine, readInt)
+- [ ] String methods (length, substring, charAt)
+- [ ] Math functions (abs, sqrt, pow, random)
+- [ ] Array utilities (sort, reverse)
+
+### Phase 10: Multi-File Projects
+- [ ] Import statements (import other .my-java files)
+- [ ] Package/namespace system
+- [ ] Compile multiple files together
+- [ ] Main class/entry point detection
+- [ ] Build a complete Calculator app using multiple files
+
 ## Prerequisites
 
 You need the following JAR files in your project directory:
@@ -17,6 +83,9 @@ wget https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.14.0/comm
 
 # Download ASM library
 wget https://repo1.maven.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar
+
+# Download antlr4
+wget https://repo1.maven.org/maven2/org/antlr/antlr4/4.13.1/antlr4-4.13.1-complete.jar -O antlr-4.13.1-complete.jar
 ```
 
 ## How to Build and Run
