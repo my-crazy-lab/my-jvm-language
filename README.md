@@ -68,6 +68,95 @@ A simple compiler for the `.my-java` language that compiles to JVM bytecode.
 - [ ] Main class/entry point detection
 - [ ] Build a complete Calculator app using multiple files
 
+---
+
+## 🎯 Demo Project: Calculator
+
+Build a calculator that evolves with each phase:
+
+**Phase 1 (Current):** ✅
+```my-java
+var result = 42
+print result
+```
+
+**Phase 2 (Arithmetic):**
+```my-java
+var a = 10
+var b = 5
+var sum = a + b
+var product = a * b
+print sum
+print product
+```
+
+**Phase 3 (Control Flow):**
+```my-java
+var operation = "add"
+var a = 10
+var b = 5
+if operation == "add" {
+    print a + b
+} else if operation == "multiply" {
+    print a * b
+}
+```
+
+**Phase 4 (Functions):**
+```my-java
+function add(x, y) {
+    return x + y
+}
+function multiply(x, y) {
+    return x * y
+}
+print add(10, 5)
+print multiply(10, 5)
+```
+
+**Phase 6 (Classes):**
+```my-java
+class Calculator {
+    var result
+
+    function add(a, b) {
+        this.result = a + b
+        return this.result
+    }
+
+    function multiply(a, b) {
+        this.result = a * b
+        return this.result
+    }
+}
+
+var calc = new Calculator()
+print calc.add(10, 5)
+print calc.multiply(10, 5)
+```
+
+**Phase 10 (Final - Multi-file):**
+```my-java
+// Calculator.my-java
+class Calculator {
+    function calculate(a, b, operation) {
+        if operation == "+" { return a + b }
+        if operation == "-" { return a - b }
+        if operation == "*" { return a * b }
+        if operation == "/" { return a / b }
+    }
+}
+
+// Main.my-java
+import Calculator
+
+var calc = new Calculator()
+print calc.calculate(10, 5, "+")
+print calc.calculate(10, 5, "*")
+```
+
+---
+
 ## Prerequisites
 
 You need the following JAR files in your project directory:
