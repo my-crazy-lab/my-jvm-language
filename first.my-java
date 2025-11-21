@@ -1,0 +1,4 @@
+var lol=2025
+print lol
+var faker="T1"
+print faker
